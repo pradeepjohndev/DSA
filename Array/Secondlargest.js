@@ -4,7 +4,7 @@ let largest = arr[0];
 let secondLargest = arr[1];
 
 for (let i = 0; i < arr.length; i++) {
-
+    // arr[i] < largest [for lowest number]
     if (arr[i] > largest) {
         secondLargest = largest;
         largest = arr[i];
