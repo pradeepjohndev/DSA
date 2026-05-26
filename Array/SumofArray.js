@@ -9,9 +9,9 @@ let result = 0
     result += arr[i];
 } */
 
-/* arr.forEach(num => { sum += num; }); */
+// arr.forEach(num => { result += num; });
 
-arr.reduce((a, b) => a + b, 0);
+// arr.reduce((a, b) => a + b, 0);
 
 console.log(result)
 
