@@ -28,3 +28,20 @@ arr.forEach(num => {
 });
 
 console.log("for each looping method:", frequ)
+
+// without inbuild method
+function getFrequency(arr) {
+    const frequency = {};
+    for (let i = 0; i < arr.length; i++) {
+        const item = arr[i];
+
+        if (frequency[item]) {
+            frequency[item]++;
+        } else {
+            frequency[item] = 1;
+        }
+    }
+    return frequency;
+}
+
+console.log(getFrequency([1, 2, 2, 3, 3, 3])); 
