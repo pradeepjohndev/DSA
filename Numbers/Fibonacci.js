@@ -33,3 +33,15 @@ for (let i = 2; i < n; i++) {
 }
 
 console.log(fibbonaci)
+
+function fibo(n) {
+    let list = [0, 1]
+
+    for (let i = 2; i < n; i++) {
+        list.push(list[i - 1] + list[i - 2])
+    }
+
+    return list
+}
+
+console.log(fibo(10))
