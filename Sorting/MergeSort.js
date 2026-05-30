@@ -37,7 +37,6 @@ console.log(mergesort(arr))
     while(left.length && right.length){
         result.push(left[0] < right[0]? left.shift(): right.shift())
     }
-
     return [...result, ...left, ...right]
 }
 
