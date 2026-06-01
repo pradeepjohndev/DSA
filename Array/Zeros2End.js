@@ -12,13 +12,11 @@ function zero(arr) {
             result.push(arr[i]);
         }
     }
-
     return result;
 }
 
 const arr = [1, 2, 0, 6, 5, 6, 7, 0, 2, 1, 0];
 console.log(zero(arr));
-
 
 function zerotoend(arr) {
     return [
