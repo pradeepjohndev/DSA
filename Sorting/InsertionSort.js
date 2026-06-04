@@ -8,7 +8,6 @@ function insertionSort(arr) {
         }
         arr[j + 1] = current;
     }
-
     return arr;
 }
 
