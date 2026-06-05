@@ -36,3 +36,25 @@ for (let i = 0; i <= array.length; i++) {
 }
 
 console.log("duplicate in array are: ", duplicate)
+
+
+// return duplicate 
+function duplicate(arr) {
+    const freq = {};
+    const result = [];
+
+    for (const num of arr) {
+        freq[num] = (freq[num] || 0) + 1;
+    }
+
+    for (const key in freq) {
+        if (freq[key] > 1) {
+            result.push(Number(key))
+        }
+    }
+
+    return result
+}
+
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 2, 5];
+console.log(duplicate(array))
